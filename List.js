@@ -18,10 +18,10 @@ export default class List {
 
   sum() {
     let result = 0;
-    let l = this.length;
+    let l = this.items.length;
     if (l) {
       while (l--) {
-        if (this[l] != null) result += parseFloat(this[l]);
+        if (this.items[l] != null) result += parseFloat(this.items[l]);
       }
     }
     return result;
